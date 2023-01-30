@@ -1,5 +1,5 @@
 <template>
-	<div id="navbar" class="w-full py-4 flex justify-between items-center">
+	<div id="navbar" class="w-full py-6 flex justify-between items-center">
 		<div class="w-[120px] h-[40px] bg-white"></div>
 		<ul class="flex gap-24 items-center text-white font-medium">
 			<router-link to="/">Home</router-link> 

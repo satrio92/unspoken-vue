@@ -1,12 +1,74 @@
 <template>
-    <div id="featured-post" class="w-full">
-        
-    </div>
+	<div id="featured-post" class="w-full py-8 flex justify-center">
+		<div class="w-[1100px] h-[500px] overflow-hidden rounded-[20px] relative group">
+			<div class="h-full flex transition-all duration-500 ease-in" :class="'w-[300%]'" :style="{ marginLeft: `-${currentPost * 100}%` }">
+				<div class="w-full h-full bg-pink-400 ralative">
+					<img src="../assets/img/posts/post-1/header.jpg" alt="header post1" class="w-full h-full object-cover">
+				</div>
+				<div class="w-full h-full bg-blue-400">
+					<img src="../assets/img/posts/post-2/header.jpg" alt="header post1" class="w-full h-full object-cover">
+				</div>
+				<div class="w-full h-full bg-green-400">
+					<img src="../assets/img/posts/post-3/header.jpg" alt="header post1" class="w-full h-full object-cover">
+				</div>
+			</div>
+			<div class="w-full h-full pb-0 group-hover:pb-16 flex items-center justify-between gap-4 px-8 absolute top-0 left-0 transition-all duration-300 ease-in z-20">
+				<button @click="PostSlider('left')" class="w-12 h-12 rounded-full flex justify-center items-center border-2 border-white bg-white/20">
+					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+						<path d="M8.22138 13L17.0795 21.8565L17.0795 21.8565C17.3165 22.0935 17.4496 22.4149 17.4496 22.75C17.4496 23.0851 17.3165 23.4065 17.0795 23.6434C16.8425 23.8804 16.5212 24.0135 16.186 24.0135C15.8509 24.0135 15.5296 23.8804 15.2926 23.6434L5.543 13.8938L8.22138 13ZM8.22138 13L17.0791 4.14384C17.0791 4.14378 17.0792 4.14373 17.0793 4.14368C17.1968 4.02643 17.29 3.88717 17.3536 3.73386C17.4172 3.58048 17.45 3.41605 17.45 3.24999C17.45 3.08393 17.4172 2.9195 17.3536 2.76611C17.2899 2.61273 17.1967 2.47341 17.0791 2.35614L16.7613 2.67474L17.0799 2.35694C16.9626 2.23937 16.8233 2.14609 16.6699 2.08244C16.5165 2.0188 16.3521 1.98604 16.186 1.98604C16.02 1.98604 15.8556 2.0188 15.7022 2.08244C15.5489 2.14604 15.4097 2.23922 15.2925 2.35667C15.2924 2.35676 15.2923 2.35685 15.2922 2.35694L5.543 12.1061L8.22138 13ZM5.2685 12.5161C5.33208 12.3629 5.42522 12.2237 5.5426 12.1065V13.8934C5.42522 13.7762 5.33208 13.6371 5.2685 13.4839C5.20486 13.3305 5.1721 13.166 5.1721 13C5.1721 12.8339 5.20486 12.6695 5.2685 12.5161Z" fill="white" stroke="white" stroke-width="0.9"/>
+					</svg>
+				</button>
+				<button @click="PostSlider('right')" class="w-12 h-12 rounded-full flex justify-center items-center border-2 border-white bg-white/20">
+					<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
+						<path d="M17.7786 13L8.92053 21.8565L8.9205 21.8565C8.68355 22.0935 8.55043 22.4149 8.55043 22.75C8.55043 23.0851 8.68355 23.4065 8.9205 23.6434C9.15746 23.8804 9.47885 24.0135 9.81395 24.0135C10.1491 24.0135 10.4704 23.8804 10.7074 23.6434L20.457 13.8938L17.7786 13ZM17.7786 13L8.92091 4.14384C8.92085 4.14378 8.9208 4.14373 8.92074 4.14368C8.80325 4.02643 8.71002 3.88717 8.64641 3.73386C8.58276 3.58048 8.55 3.41605 8.55 3.24999C8.55 3.08393 8.58276 2.9195 8.64641 2.76611C8.71005 2.61273 8.80333 2.47341 8.92091 2.35614L9.2387 2.67474L8.9201 2.35694C9.03738 2.23937 9.1767 2.14609 9.33008 2.08244C9.48346 2.0188 9.64789 1.98604 9.81395 1.98604C9.98001 1.98604 10.1444 2.0188 10.2978 2.08244C10.4511 2.14604 10.5903 2.23922 10.7075 2.35667C10.7076 2.35676 10.7077 2.35685 10.7078 2.35694L20.457 12.1061L17.7786 13ZM20.7315 12.5161C20.6679 12.3629 20.5748 12.2237 20.4574 12.1065V13.8934C20.5748 13.7762 20.6679 13.6371 20.7315 13.4839C20.7951 13.3305 20.8279 13.166 20.8279 13C20.8279 12.8339 20.7951 12.6695 20.7315 12.5161Z" fill="white" stroke="white" stroke-width="0.9"/>
+					</svg>
+				</button>
+			</div>
+			<div class=" w-full h-[350px] absolute -bottom-[350px] group-hover:bottom-0 left-0 bg-gradient-to-t from-black to-black/0 transition-all duration-300 ease-in"></div>
+			<div class="w-full py-6 absolute bottom-0 left-0 flex flex-col items-center gap-2 z-20 transition-all duration-300 ease-in">
+				<h4 class="w-[735px] text-[28px] text-white text-center font-bold">{{ postData[currentPost].title }}</h4>
+				<div class="flex items-center gap-6 text-xs text-white ">
+					<p>{{ postData[currentPost].postDate }}</p>
+					<div class="flex items-center gap-2">
+						<img src="#" alt="" class="w-6 h-6 rounded-full">
+						<p>{{ postData[currentPost].author.name }}</p>
+					</div>
+				</div>
+				<router-link to="/" class="w-[240px] h-14 bg-blue-gradient rounded-[10px] mt-2 justify-center items-center text-lg text-black font-medium hidden group-hover:flex">Read More</router-link>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 export default {
     name: 'FeaturedPost',
-    components: {}
+    components: {},
+		props: ['postData'],
+		data() {
+			return {
+				currentPost: 0
+			}
+		},
+		methods: {
+			PostSlider(move) {
+				if(move == 'right') {
+					if(this.currentPost == this.postData.length-1) {
+						this.currentPost = 0
+					} else {
+						this.currentPost++
+					}
+				} else {
+					if(this.currentPost == 0) {
+						this.currentPost = this.postData.length-1
+					} else {
+						this.currentPost--
+					}
+				}
+			}
+		},
+		mounted() {
+			console.log(this.postData)
+		}
 }
 </script>
