@@ -34,7 +34,7 @@ export default {
 		FeaturedPost,
 		PostWidget,
 		Category,
-PostCard
+		PostCard
 	},
 	data() {
 		return {

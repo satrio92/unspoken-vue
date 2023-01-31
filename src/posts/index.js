@@ -19,7 +19,7 @@ const postData = [
 		image: [
 			"header.jpg"
 		],
-		postDate: "Jan 19, 2023",
+		postDate: "Jan 23, 2023",
 		category: [
 			"Programming",
 			"Tech Tools"
@@ -34,7 +34,7 @@ const postData = [
 		image: [
 			"header.jpg"
 		],
-		postDate: "Jan 19, 2023",
+		postDate: "Jan 25, 2023",
 		category: [
 			"Programming",
 			"Tech Tools"
@@ -49,7 +49,7 @@ const postData = [
 		image: [
 			"header.jpg"
 		],
-		postDate: "Jan 19, 2023",
+		postDate: "Jan 28, 2023",
 		category: [
 			"Programming",
 			"Tech Tools"
