@@ -1,6 +1,6 @@
 const postData = [
-  {
-		title: "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver",
+  	{
+		title: "Midjourney: The Ultimate Tool for Generating Images for Design Inspiration",
 		image: [
 			"header.jpg"
 		],
@@ -14,7 +14,7 @@ const postData = [
 			bio: "nothing"
 		}
 	},
-  {
+  	{
 		title: "How to fix bug in website with react",
 		image: [
 			"header.jpg"
@@ -29,7 +29,22 @@ const postData = [
 			bio: "nothing"
 		}
 	},
-  {
+  	{
+		title: "How to fix bug in website with angular",
+		image: [
+			"header.jpg"
+		],
+		postDate: "Jan 19, 2023",
+		category: [
+			"Programming",
+			"Tech Tools"
+		],
+		author: {
+			name: "Kukuh Satrio",
+			bio: "nothing"
+		}
+	},
+  	{
 		title: "How to fix bug in website with angular",
 		image: [
 			"header.jpg"

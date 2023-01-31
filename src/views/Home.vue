@@ -1,12 +1,14 @@
 <template>
-	<div id="home" class="w-full h-[2000px] px-12 bg-black-gradient font-poppins">
+	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins">
 		<header>
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
 		</header>
-		<div class="w-full flex gap-[52px] relative justify-center">
+		<div class="w-full flex gap-[52px] relative justify-center pt-44">
 			<!-- POSTS -->
-			<div class="w-[776px] h-[1000px] bg-pink-300"></div>
+			<div class="w-[776px] flex gap-9 flex-wrap">
+				<PostCard :item="item" v-for="item in postData" :key="item.id"/>
+			</div>
 			<!-- Posts Widget -->
 			<div class="w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
 				<PostWidget :postData="postData"/>
@@ -21,6 +23,7 @@
 import Category from '../components/Category.vue';
 import FeaturedPost from '../components/FeaturedPost.vue';
 import Navbar from '../components/Navbar.vue'
+import PostCard from '../components/PostCard.vue';
 import PostWidget from '../components/PostWidget.vue';
 import postData from '../posts'
 
@@ -30,7 +33,8 @@ export default {
 		Navbar,
 		FeaturedPost,
 		PostWidget,
-		Category
+		Category,
+PostCard
 	},
 	data() {
 		return {
