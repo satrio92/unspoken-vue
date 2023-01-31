@@ -1,6 +1,6 @@
 <template>
   <div id="post-card" class="flex flex-col gap-6">
-		<img :src="'/src/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" alt="" class="w-[370px] h-[220px] rounded-[20px] object-cover">
+		<img :src="'/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" alt="" class="w-[370px] h-[220px] rounded-[20px] object-cover">
 		<div class="w-[370px] rounded-[20px] border-2 hover:border-none border-white hover:bg-black-gradient text-white flex flex-col items-center py-6 px-9 gap-4">
 			<p class="text-xs font-medium">{{ item.postDate }}</p>
 			<p class="text-center font-semibold">{{ item.title }}</p>
