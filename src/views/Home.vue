@@ -8,15 +8,17 @@
 			<!-- POSTS -->
 			<div class="w-[776px] h-[1000px] bg-pink-300"></div>
 			<!-- Posts Widget -->
-			<div class="w-[370px] h-[605px] sticky top-6 flex flex-col justify-between">
+			<div class="w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
 				<PostWidget :postData="postData"/>
+				<Category />
 			</div>
+
 		</div>
 	</div>
 </template>
 
 <script>
-
+import Category from '../components/Category.vue';
 import FeaturedPost from '../components/FeaturedPost.vue';
 import Navbar from '../components/Navbar.vue'
 import PostWidget from '../components/PostWidget.vue';
@@ -27,7 +29,8 @@ export default {
 	components: {
 		Navbar,
 		FeaturedPost,
-		PostWidget
+		PostWidget,
+		Category
 	},
 	data() {
 		return {
