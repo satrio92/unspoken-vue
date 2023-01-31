@@ -1,11 +1,8 @@
 <template>
 	<div id="featured-post" class="w-full py-8 flex justify-center">
 		<div class="w-[1100px] h-[500px] overflow-hidden rounded-[20px] relative group">
-			<div class="h-full flex transition-all duration-500 ease-in" :class="'w-[400%]'" :style="{ marginLeft: `-${currentPost * 100}%` }">
-				<!-- <div class="w-full-h-full" v-for="item in postData" :key="item.id">
-					<img :src="'/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" :alt="item.title" class="w-full h-full object-cover">
-				</div> -->
-				<div class="w-full h-full bg-pink-400" v-for="item in postData" :key="item.id">
+			<div class="h-full flex transition-all duration-500 ease-in" :class="'w-[300%]'" :style="{ marginLeft: `-${currentPost * 100}%` }">
+				<div class="w-full h-full bg-pink-400" v-for="item in featuredPost" :key="item.id">
 					<img :src="'/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" :alt="item.title" class="w-full h-full object-cover">
 				</div>
 			</div>
@@ -23,12 +20,12 @@
 			</div>
 			<div class=" w-full h-[350px] absolute -bottom-[350px] group-hover:bottom-0 left-0 bg-gradient-to-t from-black to-black/0 transition-all duration-300 ease-in"></div>
 			<div class="w-full py-6 absolute bottom-0 left-0 flex flex-col items-center gap-2 z-20 transition-all duration-300 ease-in">
-				<h4 class="w-[735px] text-[28px] text-white text-center font-bold">{{ postData[currentPost].title }}</h4>
+				<h4 class="w-[735px] text-[28px] text-white text-center font-bold">{{ featuredPost[currentPost].title }}</h4>
 				<div class="flex items-center gap-6 text-xs text-white ">
-					<p>{{ postData[currentPost].postDate }}</p>
+					<p>{{ featuredPost[currentPost].postDate }}</p>
 					<div class="flex items-center gap-2">
 						<img src="#" alt="" class="w-6 h-6 rounded-full bg-white">
-						<p>{{ postData[currentPost].author.name }}</p>
+						<p>{{ featuredPost[currentPost].author.name }}</p>
 					</div>
 				</div>
 				<router-link to="/" class="w-[240px] h-14 bg-blue-gradient rounded-[10px] mt-2 justify-center items-center text-lg text-black font-medium hidden group-hover:flex">Read More</router-link>
@@ -50,22 +47,27 @@ export default {
 		methods: {
 			PostSlider(move) {
 				if(move == 'right') {
-					if(this.currentPost == this.postData.length-1) {
+					if(this.currentPost == this.featuredPost.length-1) {
 						this.currentPost = 0
 					} else {
 						this.currentPost++
 					}
 				} else {
 					if(this.currentPost == 0) {
-						this.currentPost = this.postData.length-1
+						this.currentPost = this.featuredPost.length-1
 					} else {
 						this.currentPost--
 					}
 				}
 			}
 		},
+		computed: {
+			featuredPost() {
+				return this.postData.filter(object => object.featured === true);
+			}
+		},
 		mounted() {
-			console.log(this.postData)
+			// console.log(this.postData)
 		}
 }
 </script>

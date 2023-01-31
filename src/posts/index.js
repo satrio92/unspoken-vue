@@ -1,6 +1,7 @@
 const postData = [
   	{
 		title: "Midjourney: The Ultimate Tool for Generating Images for Design Inspiration",
+		featured: true,
 		image: [
 			"header.jpg"
 		],
@@ -16,6 +17,7 @@ const postData = [
 	},
   	{
 		title: "How to fix bug in website with react",
+		featured: true,
 		image: [
 			"header.jpg"
 		],
@@ -31,6 +33,7 @@ const postData = [
 	},
   	{
 		title: "How to fix bug in website with angular",
+		featured: false,
 		image: [
 			"header.jpg"
 		],
@@ -46,6 +49,7 @@ const postData = [
 	},
   	{
 		title: "How to fix bug in website with angular",
+		featured: true,
 		image: [
 			"header.jpg"
 		],

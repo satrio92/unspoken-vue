@@ -14,7 +14,6 @@
 				<PostWidget :postData="postData"/>
 				<Category />
 			</div>
-
 		</div>
 	</div>
 </template>
@@ -38,10 +37,12 @@ export default {
 	},
 	data() {
 		return {
-			postData: postData
+			postData: postData,
 		}
 	},
 	methods: {
+	},
+	mouted() {
 	}
 }
 </script>
