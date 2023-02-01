@@ -8,7 +8,7 @@
 				<img src="" alt="" class="w-6 h-6 rounded-full bg-white">
 				<p class="text-xs font-medium">{{ item.author.name }}</p>
 			</div>
-			<router-link to="/" class="w-full h-16 rounded-[10px] bg-blue-gradient flex justify-center items-center text-lg text-black font-medium mt-[9px]">Read More</router-link>
+			<router-link :to="'/post/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase()" class="w-full h-16 rounded-[10px] bg-blue-gradient flex justify-center items-center text-lg text-black font-medium mt-[9px]">Read More</router-link>
 		</div>
 	</div>
 </template>
