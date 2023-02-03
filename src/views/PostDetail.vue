@@ -16,7 +16,7 @@
 					</div>
 					<h1 class="text-2xl text-center font-bold">{{ thePost[0].title }}</h1>
 				</div>
-				<div class="text-white flex flex-col gap-5 px-6" v-html="article"></div>
+				<div class="text-white flex flex-col gap-5 px-6" v-html="thePost[0].content"></div>
 			</div>
 			<div class="w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
 				<PostWidget :postData="postData"/>
