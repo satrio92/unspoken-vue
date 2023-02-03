@@ -4,13 +4,13 @@
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
 		</header>
-		<div class="w-full flex gap-[52px] relative justify-center pt-44">
+		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center pt-44">
 			<!-- POSTS -->
-			<div class="w-[776px] flex gap-9 flex-wrap">
+			<div class="w-full justify-center xl:justify-start xl:w-[776px] flex gap-9 flex-wrap">
 				<PostCard :item="item" v-for="item in postData" :key="item.id"/>
 			</div>
 			<!-- Posts Widget -->
-			<div class="w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
+			<div class="w-full items-center xl:items-start xl:w-[370px] h-[605px] xl:sticky top-6 flex flex-col gap-[25px]">
 				<PostWidget :postData="postData"/>
 				<Category />
 			</div>

@@ -1,6 +1,6 @@
 <template>
 	<div id="featured-post" class="w-full py-8 flex justify-center">
-		<div class="w-[1100px] h-[500px] overflow-hidden rounded-[20px] relative group">
+		<div class="w-full xl:w-[1100px] h-[220px] xl:h-[500px] overflow-hidden rounded-[20px] relative group">
 			<div class="h-full flex transition-all duration-500 ease-in" :style="{ marginLeft: `-${currentPost * 100}%`, width: `${featuredPost.length * 100}%`}">
 				<div class="w-full h-full bg-pink-400" v-for="item in featuredPost" :key="item.id">
 					<img :src="'/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" :alt="item.title" class="w-full h-full object-cover">
