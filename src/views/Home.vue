@@ -15,6 +15,7 @@
 				<Category />
 			</div>
 		</div>
+		<!-- <div id="footer" class="w-full h-28 bg-green-500"></div> -->
 	</div>
 </template>
 

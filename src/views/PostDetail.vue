@@ -31,6 +31,7 @@ import Category from '../components/Category.vue';
 import Navbar from '../components/Navbar.vue'
 import PostWidget from '../components/PostWidget.vue';
 import postData from '../posts'
+import content from '../posts/midjourney-the-ultimate-tool-for-generating-images-for-design-inspiration/article'
 
 export default {
 	name: 'PostDetail',
@@ -56,7 +57,7 @@ export default {
 		fetch('/src/posts/'+ this.$route.params.post +'/article.html')
 		.then(response => response.text())
 		.then(article => {
-			this.article = article, console.log(article)
+			this.article = article, this.article.content = content
 		});
 	}
 }
