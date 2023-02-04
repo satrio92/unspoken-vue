@@ -1,5 +1,3 @@
-import article1 from '../posts/midjourney-the-ultimate-tool-for-generating-images-for-design-inspiration/article'
-
 const postData = [
   	{
 		title: "Midjourney: The Ultimate Tool for Generating Images for Design Inspiration",
@@ -15,8 +13,7 @@ const postData = [
 		author: {
 			name: "Kukuh Satrio",
 			bio: "nothing"
-		},
-		content: article1
+		}
 	},
   	{
 		title: "How to fix bug in website with react",
@@ -48,8 +45,7 @@ const postData = [
 		author: {
 			name: "Kukuh Satrio",
 			bio: "nothing"
-		},
-		content: `nothing to appear`
+		}
 	},
   	{
 		title: "How to fix bug in website with angular",
@@ -65,8 +61,7 @@ const postData = [
 		author: {
 			name: "Kukuh Satrio",
 			bio: "nothing"
-		},
-		content: `nothing to appear`
+		}
 	}
 ]
 

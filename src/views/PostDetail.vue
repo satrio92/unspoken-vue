@@ -31,7 +31,6 @@ import Category from '../components/Category.vue';
 import Navbar from '../components/Navbar.vue'
 import PostWidget from '../components/PostWidget.vue';
 import postData from '../posts'
-import content from '../posts/midjourney-the-ultimate-tool-for-generating-images-for-design-inspiration/article'
 
 export default {
 	name: 'PostDetail',
