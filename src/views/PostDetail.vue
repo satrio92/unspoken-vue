@@ -54,7 +54,7 @@ export default {
 	},
 	  mounted() {
 		// fetch the article HTML file from your local storage
-		fetch('/src/posts/'+ this.$route.params.post +'/article.html')
+		fetch('/assets/img/posts/'+ this.$route.params.post +'/article.html')
 		.then(response => response.text())
 		.then(article => {
 			this.article = article, console.log(article)
