@@ -24,7 +24,7 @@
 				<div class="flex items-center gap-6 text-xs text-white ">
 					<p>{{ featuredPost[currentPost].postDate }}</p>
 					<div class="flex items-center gap-2">
-						<img src="#" alt="" class="w-6 h-6 rounded-full bg-white">
+						<img :src="'/assets/img/author/' + featuredPost[currentPost].author.name.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '.png'" alt="" class="w-6 h-6 rounded-full bg-white">
 						<p>{{ featuredPost[currentPost].author.name }}</p>
 					</div>
 				</div>

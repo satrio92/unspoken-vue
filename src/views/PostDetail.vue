@@ -5,12 +5,12 @@
 		</header>
 		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center pt-12">
 			<div class="w-full xl:w-[776px] bg-black-gradient flex flex-col gap-16 rounded-[20px] py-8 px-3 xl:px-8 text-white ">
-				<div class="w-full flex flex-col gap-4 items-center">
+				<div class="w-full flex flex-col gap-6 items-center">
 					<img :src="'/assets/posts/' + thePost[0].title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="thePost[0].title" class="w-full h-[200px] xl:h-[350px] bg-white rounded-2xl object-cover">
 					<div class="flex items-center text-sm gap-4">
 						<p class="text-sm xl:text-base">{{ thePost[0].postDate }}</p>
 						<div class="flex items-center gap-2">
-							<img src="#" alt="" class="w-6 h-6 rounded-full bg-white">
+							<img :src="'/assets/img/author/' + thePost[0].author.name.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '.png'" alt="" class="w-6 h-6 rounded-full bg-white">
 							<p class="text-sm xl:text-base">{{ thePost[0].author.name }}</p>
 						</div>
 					</div>
