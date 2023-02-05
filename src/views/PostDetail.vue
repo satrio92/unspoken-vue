@@ -19,7 +19,7 @@
 				<div class="text-white flex flex-col gap-5 px-6 text-sm xl:text-base" v-html="article"></div>
 			</div>
 			<div class="w-full items-center xl:items-start xl:w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
-				<PostWidget :postData="postData"/>
+				<PostWidget :postData="postData" :data="{name: thePost[0].title, category: thePost[0].category }"/>
 				<Category />
 			</div>
 		</div>
@@ -56,7 +56,7 @@ export default {
 		fetch('/assets/posts/'+ this.$route.params.post +'/article.html')
 		.then(response => response.text())
 		.then(article => {
-			this.article = article, console.log(article)
+			this.article = article, console.log("haloo")
 		});
 	}
 }

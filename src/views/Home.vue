@@ -11,7 +11,7 @@
 			</div>
 			<!-- Posts Widget -->
 			<div class="w-full items-center xl:items-start xl:w-[370px] h-[605px] xl:sticky top-6 flex flex-col gap-[25px]">
-				<PostWidget :postData="postData"/>
+				<PostWidget :postData="postData" :data="'recent'"/>
 				<Category />
 			</div>
 		</div>

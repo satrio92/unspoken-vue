@@ -7,7 +7,7 @@ const postData = [
 		],
 		postDate: "Jan 19, 2023",
 		category: [
-			"Programming",
+			"Design",
 			"Tech Tools"
 		],
 		author: {
@@ -23,8 +23,8 @@ const postData = [
 		],
 		postDate: "Jan 23, 2023",
 		category: [
-			"Programming",
-			"Tech Tools"
+			"Editing",
+			"Design"
 		],
 		author: {
 			name: "Kukuh Satrio",
@@ -39,8 +39,7 @@ const postData = [
 		],
 		postDate: "Jan 25, 2023",
 		category: [
-			"Programming",
-			"Tech Tools"
+			"Recommendation"
 		],
 		author: {
 			name: "Kukuh Satrio",
@@ -56,6 +55,22 @@ const postData = [
 		postDate: "Jan 28, 2023",
 		category: [
 			"Programming",
+			"Editing"
+		],
+		author: {
+			name: "Kukuh Satrio",
+			bio: "nothing"
+		}
+	},
+  	{
+		title: "How to fix bug in website with angular",
+		featured: true,
+		image: [
+			"header.jpg"
+		],
+		postDate: "Jan 28, 2023",
+		category: [
+			"Design",
 			"Tech Tools"
 		],
 		author: {
