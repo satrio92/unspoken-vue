@@ -2,8 +2,8 @@
 	<div id="navbar" class="w-full xl:w-[1100px] py-6 flex justify-between items-center">
 		<!-- <div class="w-[120px] h-[40px] bg-white"></div> -->
 		<div class="flex gap-3 items-center text-lg tracking-[.2em] text-white font-semibold ">
-			<img src="../../public/assets/img/logo.svg" alt="Logo Pixelize" class="h-[45px]">
-			<span>Pixelize</span>
+			<router-link to="/" ><img src="../../public/assets/img/logo.svg" alt="Logo Pixelize" class="h-[45px]"></router-link>
+			<router-link to="/">Pixelize</router-link>
 		</div>
 		<ul class="flex gap-4 items-center text-lg text-white font-medium">
 			<router-link to="/" class="pr-10 py-2 rounded-r-md rounded-bl-md" active-class="pl-10 font-semibold text-[#050915] bg-dropsunrise" exact>Home</router-link> 

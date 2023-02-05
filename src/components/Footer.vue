@@ -1,8 +1,8 @@
 <template>
   <div id="footer" class="w-full xl:w-[1100px] pt-12 border-t-2 border-white flex justify-between items-center">
 		<div class="flex gap-3 items-center text-2xl tracking-[.2em] text-white font-semibold ">
-			<img src="../../public/assets/img/logo.svg" alt="Logo Pixelize" class="h-[65px]">
-			<span>Pixelize</span>
+			<router-link to="/"><img src="../../public/assets/img/logo.svg" alt="Logo Pixelize" class="h-[65px]"></router-link>
+			<router-link to="/">Pixelize</router-link>
 		</div>
 		<div class="flex flex-col items-end gap-4">
 			<div class="border-2 border-white text-white flex rounded-lg overflow-hidden">
