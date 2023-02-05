@@ -1,12 +1,12 @@
 <template>
-	<div id="post-detail"  class="w-full px-6 xl:px-12 pb-12 bg-[#050915] font-poppins">
+	<div id="post-detail"  class="w-full px-6 xl:px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center">
 		<header>
 			<Navbar />
 		</header>
 		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center pt-12">
 			<div class="w-full xl:w-[776px] bg-black-gradient flex flex-col gap-16 rounded-[20px] py-8 px-3 xl:px-8 text-white ">
 				<div class="w-full flex flex-col gap-4 items-center">
-					<img :src="'/assets/img/posts/' + thePost[0].title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" :alt="thePost[0].title" class="w-full h-[200px] xl:h-[350px] bg-white rounded-2xl object-cover">
+					<img :src="'/assets/posts/' + thePost[0].title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="thePost[0].title" class="w-full h-[200px] xl:h-[350px] bg-white rounded-2xl object-cover">
 					<div class="flex items-center text-sm gap-4">
 						<p class="text-sm xl:text-base">{{ thePost[0].postDate }}</p>
 						<div class="flex items-center gap-2">
@@ -53,7 +53,7 @@ export default {
 	},
 	  mounted() {
 		// fetch the article HTML file from your local storage
-		fetch('/assets/img/posts/'+ this.$route.params.post +'/article.html')
+		fetch('/assets/posts/'+ this.$route.params.post +'/article.html')
 		.then(response => response.text())
 		.then(article => {
 			this.article = article, console.log(article)

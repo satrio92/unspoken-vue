@@ -2,8 +2,8 @@
 	<div id="featured-post" class="w-full py-8 flex justify-center">
 		<div class="w-full xl:w-[1100px] h-[220px] xl:h-[500px] overflow-hidden rounded-[20px] relative group">
 			<div class="h-full flex transition-all duration-500 ease-in" :style="{ marginLeft: `-${currentPost * 100}%`, width: `${featuredPost.length * 100}%`}">
-				<div class="w-full h-full bg-pink-400" v-for="item in featuredPost" :key="item.id">
-					<img :src="'/assets/img/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/header.jpg'" :alt="item.title" class="w-full h-full object-cover">
+				<div class="w-full h-ful" v-for="item in featuredPost" :key="item.id">
+					<img :src="'/assets/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="item.title" class="w-full h-full object-cover">
 				</div>
 			</div>
 			<div class="w-full h-full pb-0 group-hover:pb-16 flex items-center justify-between gap-4 px-8 absolute top-0 left-0 transition-all duration-300 ease-in z-20">
