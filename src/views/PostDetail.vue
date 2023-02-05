@@ -10,7 +10,7 @@
 					<div class="flex items-center text-sm gap-4">
 						<p class="text-sm xl:text-base">{{ thePost[0].postDate }}</p>
 						<div class="flex items-center gap-2">
-							<img :src="'/assets/img/author/' + thePost[0].author.name.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '.png'" alt="" class="w-6 h-6 rounded-full bg-white">
+							<img :src="'/assets/img/author/' + thePost[0].author.name.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '.png'" :alt="thePost[0].author.name" class="w-6 h-6 rounded-full bg-white">
 							<p class="text-sm xl:text-base">{{ thePost[0].author.name }}</p>
 						</div>
 					</div>
