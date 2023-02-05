@@ -2,7 +2,7 @@
 	<div id="navbar" class="w-full xl:w-[1100px] py-6 flex justify-between items-center">
 		<!-- <div class="w-[120px] h-[40px] bg-white"></div> -->
 		<div class="flex gap-3 items-center text-lg tracking-[.2em] text-white font-semibold ">
-			<img src="../../public/assets/img/logo.svg" alt="" class="h-[45px]">
+			<img src="../../public/assets/img/logo.svg" alt="Logo Pixelize" class="h-[45px]">
 			<span>Pixelize</span>
 		</div>
 		<ul class="flex gap-4 items-center text-lg text-white font-medium">

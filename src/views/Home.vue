@@ -1,10 +1,10 @@
 <template>
-	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center">
+	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center gap-24">
 		<header>
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
 		</header>
-		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center pt-44">
+		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center">
 			<!-- POSTS -->
 			<div class="w-full justify-center xl:justify-start xl:w-[776px] flex gap-9 flex-wrap">
 				<PostCard :item="item" v-for="item in postData" :key="item.id"/>
@@ -15,13 +15,14 @@
 				<Category />
 			</div>
 		</div>
-		<!-- <div id="footer" class="w-full h-28 bg-green-500"></div> -->
+		<Footer />
 	</div>
 </template>
 
 <script>
 import Category from '../components/Category.vue';
 import FeaturedPost from '../components/FeaturedPost.vue';
+import Footer from '../components/Footer.vue';
 import Navbar from '../components/Navbar.vue';
 import PostCard from '../components/PostCard.vue';
 import PostWidget from '../components/PostWidget.vue';
@@ -30,12 +31,13 @@ import postData from '../posts'
 export default {
 	name: 'Home',
 	components: {
-		Navbar,
-		FeaturedPost,
-		PostWidget,
-		Category,
-		PostCard
-	},
+    Navbar,
+    FeaturedPost,
+    PostWidget,
+    Category,
+    PostCard,
+    Footer
+},
 	data() {
 		return {
 			postData: postData,
