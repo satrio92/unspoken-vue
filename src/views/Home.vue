@@ -1,5 +1,5 @@
 <template>
-	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins">
+	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center">
 		<header>
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
@@ -22,7 +22,7 @@
 <script>
 import Category from '../components/Category.vue';
 import FeaturedPost from '../components/FeaturedPost.vue';
-import Navbar from '../components/Navbar.vue'
+import Navbar from '../components/Navbar.vue';
 import PostCard from '../components/PostCard.vue';
 import PostWidget from '../components/PostWidget.vue';
 import postData from '../posts'

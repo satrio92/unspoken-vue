@@ -73,6 +73,10 @@
 		);
 	}
 
+	.bg-dropsunrise {
+		background: linear-gradient(180deg, #F1D937 0%, #FD9B07 22.79%);
+	}
+
 	.bg-discount-gradient {
 		background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
 	}
