@@ -13,7 +13,6 @@
 				<router-link to="/about" class="py-4 px-12 flex items-center relative" active-class="font-semibold text-[#050915] bg-dropsunrise" exact>
 					<span>About</span>
 					<div v-if="$route.path === '/about'" class="border-[3px] border-white h-[14px] w-[14px] rounded-full bg-black absolute -left-[7px]"></div>
-					<div v-if="$route.path === '/about'" class="border-[3px] border-white h-[14px] w-[14px] rounded-full bg-black absolute -right-[7px]"></div>
 				</router-link>
 				<router-link to="/contact" class="py-4 px-12 flex items-center relative" active-class="font-semibold text-[#050915] bg-dropsunrise" exact>
 					<span>Contact</span>
