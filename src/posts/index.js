@@ -12,7 +12,7 @@ const postData = [
 		],
 		author: {
 			name: "Kukuh Satrio",
-			bio: "nothing"
+			bio: "When you let your imagination take control, amazing things can happen, let your creativity lead the way."
 		}
 	},
   	{
@@ -28,7 +28,7 @@ const postData = [
 		],
 		author: {
 			name: "Kukuh Satrio",
-			bio: "nothing"
+			bio: "When you let your imagination take control, amazing things can happen, let your creativity lead the way."
 		}
 	},
   	{
@@ -43,7 +43,7 @@ const postData = [
 		],
 		author: {
 			name: "Kukuh Satrio",
-			bio: "nothing"
+			bio: "When you let your imagination take control, amazing things can happen, let your creativity lead the way."
 		}
 	},
   	{
@@ -59,7 +59,7 @@ const postData = [
 		],
 		author: {
 			name: "Kukuh Satrio",
-			bio: "nothing"
+			bio: "When you let your imagination take control, amazing things can happen, let your creativity lead the way."
 		}
 	},
   	{
@@ -75,7 +75,7 @@ const postData = [
 		],
 		author: {
 			name: "Kukuh Satrio",
-			bio: "nothing"
+			bio: "When you let your imagination take control, amazing things can happen, let your creativity lead the way."
 		}
 	}
 ]
