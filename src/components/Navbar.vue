@@ -6,9 +6,9 @@
 			<span>Pixelize</span>
 		</div>
 		<ul class="flex gap-4 items-center text-lg text-white font-medium">
-			<router-link to="/" class="pr-10 py-2 rounded-r-md rounded-bl-md" active-class="font-semibold text-[#050915] bg-dropsunrise" exact>Home</router-link> 
+			<router-link to="/" class="pr-10 py-2 rounded-r-md rounded-bl-md" active-class="pl-10 font-semibold text-[#050915] bg-dropsunrise" exact>Home</router-link> 
 			<router-link to="/about" class="px-10 py-2 rounded-r-md rounded-bl-md" active-class="font-semibold text-[#050915] bg-dropsunrise" exact>About</router-link> 
-			<router-link to="/contact" class="pl-10 py-2 rounded-r-md rounded-bl-md" active-class="font-semibold text-[#050915] bg-dropsunrise" exact>Contact</router-link> 
+			<router-link to="/contact" class="pl-10 py-2 rounded-r-md rounded-bl-md" active-class="pr-10 font-semibold text-[#050915] bg-dropsunrise" exact>Contact</router-link> 
 		</ul>
 	</div>
 </template>
