@@ -28,7 +28,7 @@
 						<p>{{ featuredPost[currentPost].author.name }}</p>
 					</div>
 				</div>
-				<router-link to="/" class="w-[240px] h-14 bg-blue-gradient rounded-[10px] mt-2 justify-center items-center text-lg text-black font-medium hidden group-hover:flex">Read More</router-link>
+				<router-link :to="'/post/' + featuredPost[currentPost].title.replace(/[\s:;*?<>]+/g, '-').toLowerCase()" class="w-[240px] h-14 bg-blue-gradient rounded-[10px] mt-2 justify-center items-center text-lg text-black font-medium hidden group-hover:flex">Read More</router-link>
 			</div>
 		</div>
 	</div>
