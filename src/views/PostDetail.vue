@@ -4,7 +4,7 @@
 			<Navbar />
 		</header>
 		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center pt-12">
-			<div class="flex flex-col gap-16">
+			<div class="flex flex-col gap-16 xl:mb-16">
 				<div class="w-full xl:w-[776px] bg-black-gradient flex flex-col gap-16 rounded-[16px] xl:rounded-[20px] pt-4 pb-8 xl:pt-8 xl:pb-8 px-3 xl:px-8 text-white ">
 					<div class="w-full flex flex-col gap-6 items-center">
 						<img :src="'/assets/posts/' + thePost[0].title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="thePost[0].title" class="w-full h-[200px] xl:h-[350px] bg-white rounded-[10px] object-cover">
@@ -21,7 +21,7 @@
 				</div>
 				<Author :author="thePost[0].author"/>
 			</div>
-			<div class="w-full items-center xl:items-start xl:w-[370px] h-[605px] sticky top-6 flex flex-col gap-[25px]">
+			<div class="w-full items-center xl:items-start xl:w-[370px] h-auto xl:h-[605px] sticky top-6 flex flex-col gap-[25px] mb-16 xl:mb-0">
 				<PostWidget :postData="postData" :data="{name: thePost[0].title, category: thePost[0].category }"/>
 				<Category />
 			</div>
