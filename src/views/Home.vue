@@ -1,10 +1,10 @@
 <template>
-	<div id="home" class="w-full px-4 xl:px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center gap-24">
+	<div id="home" class="w-full px-6 xl:px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center gap-24">
 		<header class="w-full xl:w-auto">
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
 		</header>
-		<div class="w-full flex flex-col xl:flex-row gap-[52px] relative justify-center">
+		<div class="w-full flex flex-col px-6 xl:flex-row gap-[52px] relative justify-center">
 			<!-- POSTS -->
 			<div class="w-full justify-center xl:justify-start xl:w-[776px] flex gap-9 flex-wrap">
 				<PostCard :item="item" v-for="item in postData" :key="item.id"/>
