@@ -1,6 +1,6 @@
 <template>
-	<div id="home" class="w-full px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center gap-24">
-		<header>
+	<div id="home" class="w-full px-4 xl:px-12 pb-12 bg-[#050915] font-poppins flex flex-col items-center gap-24">
+		<header class="w-full xl:w-auto">
 			<Navbar />
 			<FeaturedPost :postData="postData"/>
 		</header>

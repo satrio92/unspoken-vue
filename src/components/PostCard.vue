@@ -1,7 +1,7 @@
 <template>
-  <div id="post-card" class="flex flex-col gap-6">
-		<img :src="'/assets/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="item.title" class="w-[370px] h-[220px] rounded-[20px] object-cover">
-		<div class="w-[370px] rounded-[20px] border-2 hover:border-none border-white hover:bg-black-gradient text-white flex flex-col items-center py-6 px-9 gap-4">
+  <div id="post-card" class="w-full xl:w-[370px] flex flex-col gap-6">
+		<img :src="'/assets/posts/' + item.title.replace(/[\s:;*?<>]+/g, '-').toLowerCase() + '/img/header.jpg'" :alt="item.title" class="w-full h-[220px] rounded-[20px] object-cover">
+		<div class="w-full rounded-[20px] border-2 hover:border-none border-white hover:bg-black-gradient text-white flex flex-col items-center py-6 px-9 gap-4">
 			<p class="text-xs font-medium">{{ item.postDate }}</p>
 			<p class="text-center font-semibold">{{ item.title }}</p>
 			<div class="flex gap-2 items-center">
