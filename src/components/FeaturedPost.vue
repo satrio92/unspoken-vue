@@ -19,7 +19,7 @@
 				</button>
 			</div>
 			<div class=" w-full h-[200px] xl:h-[350px] absolute -bottom-[200px] xl:-bottom-[350px] group-hover:bottom-0 left-0 bg-gradient-to-t from-black to-black/0 transition-all duration-300 ease-in"></div>
-			<div class="w-full py-3 xl:py-6 absolute bottom-0 left-0 flex flex-col items-center gap-1 xl:gap-2 z-20 transition-all duration-300 ease-in">
+			<div class="w-full py-3 xl:py-6 absolute bottom-0 left-0 px-3 xl:px-0 flex flex-col items-center gap-1 xl:gap-2 z-20 transition-all duration-300 ease-in">
 				<h4 class="w-full xl:w-[735px] text-[14px] leading-1 xl:leading-normal xl:text-[28px] text-white text-center font-semibold xl:font-bold">{{ featuredPost[currentPost].title }}</h4>
 				<div class="flex items-center gap-3 xl:gap-6 text-[9px] xl:text-[12px] text-white ">
 					<p>{{ featuredPost[currentPost].postDate }}</p>
